@@ -19,13 +19,6 @@
 	
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
-	<!-- github activity widget -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	<link rel="stylesheet" href="github-activity-0.1.5.min.css">
-	
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-	<script type="text/javascript" src="github-activity-0.1.5.min.js"></script>
-	<!-- end of github activity widget -->
 	<!-- Include the library. -->
 	<script
 	src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
@@ -37,12 +30,10 @@
 	href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 	/>
 
-	<!-- style sheet for Back to top button -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
-
-	
-
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!------ Contact form ---------->
 </head> 
 
 <body>
@@ -76,7 +67,7 @@
 						<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="assets/images/andreou new.png" alt="image">
 						<div class="media-body text-left">
 							<p class="mb-0">Experienced Technical Lead with a demonstrated history of working in startup organization management industry. Skilled in PowerPoint development, Python (Programming Language), Microsoft Word, Public Speaking, and Java. Strong engineering professional with a Bachelor of Science - BS focused in Computer Science from Cardiff University / Prifysgol Caerdydd. 
-							<br><a class="theme-link" href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/" target="_blank">DOWNLOAD my CV</a></p>
+							<br><a class="theme-link" href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/" target="_blank"><button class="btn btn-primary">Download my CV</a></button></p>
 						</div><!--//media-body-->
 					</div>
 				</div><!--//resume-intro-->
@@ -173,27 +164,9 @@
 										
 									</div>
 								</div><!--//item-->
+								
 								<div class="item">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Sed Fringilla</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Open Source</div>
-										
-									</div>
-									<div class="item-content">
-										<p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-										
-									</div>
-								</div><!--//item-->
-								<div class="item">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Praesent </h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Open Source</div>
-										
-									</div>
-									<div class="item-content">
-										<p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-										
-									</div>
+								
 									<div class="calendar">
 										<!-- Loading stuff -->
 										Loading the data just for you.
@@ -210,12 +183,11 @@
 											 return fetch(`https://your-proxy.com/github?user=${username}`)
 										   }
 										}).then(r => r.text())
-									</script>
-									
-								
-								
+									</script>								
 								</div><!--//item-->
+								
 							</section><!--//project-section-->	
+							
 						</div><!--//resume-main-->
 						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
 							<section class="skills-section py-3">
@@ -226,6 +198,7 @@
 										<li class="mb-2">JavaScript/HTML/CSS/Vue</li>
 										<li class="mb-2">Python/PHP/Laravel<li>
 											<li class="mb-2">C#/ASP.NET</li>
+											<li class="mb-2">Java</li>
 											<li class="mb-2">NoSQL/MySQL</li>
 											<li class="mb-2">Object-oriented design</li>
 											<li class="mb-2">Design and implement database structures</li>
@@ -281,17 +254,45 @@
 						</div><!--//resume-footer-->
 					</article>
 					
-				</div><!--//container-->
+				
 				
 				<footer class="footer text-center py-4">
 					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-					<!-- <small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				</footer> -->
-
-				<!-- Back to top button -->
-				<a id="button"></a>
-				
-			</div><!--//main-wrapper--> 
+					<!-- <small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>*/-->
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3>Drop me a line!</h3>
+								<hr>
+								<address>
+								<strong>Email:</strong> <a href="mailto:giorgos.andreou.1995@gmail.com"> giorgos.andreou.1995@gmail.com</a><br><br>
+								<strong>Phone:</strong> 00447858789202
+								</address>
+							</div>
+							
+						<div class="col-sm-8 contact-form">
+							<form id="contact" action="mailto:giorgos.andreou.1995@gmail.com" method="post" class="form" role="form">
+							<div class="row">
+							<div class="col-xs-6 col-md-6 form-group">
+							<input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+							</div>
+							<div class="col-xs-6 col-md-6 form-group">
+							<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+							</div>
+							</div>
+							<textarea class="form-control" id="body" name="body" placeholder="Message" rows="5"></textarea>
+							<br />
+							<div class="row">
+							<div class="col-xs-12 col-md-12 form-group">
+							<button class="btn btn-primary pull-right" type="submit">Submit</button>
+							</form>
+						</div><!-- contact form div -->
+					</div>
+					</div>	
+					</div><!--div row-->
+				</footer>
+			</div><!--//container-->
+		</div><!--//main-wrapper--> 
 			
 
 </body>
